@@ -4,8 +4,9 @@
     padding: 5px;
     background-color: royalblue;
     color: silver;
+    cursor: pointer;
 }
 
 #clickme:hover {
-    cursor: pointer;
+    background-color: darkslateblue;
 }
