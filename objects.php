@@ -5,42 +5,7 @@ Sam Scott, McMaster University, 2025
 -->
 <?php
 // Class definition for a Person
-class Person
-{
-    // instance variables
-    private $name;
-    private $age;
-
-    // constructor function must be named __construct
-    // not the use of default values
-    public function __construct($name, $age = -1)
-    {
-        $this->name = $name;
-        $this->age = $age;
-    }
-
-    // Accessor and mutator functions
-    public function get_name()
-    {
-        return $this->name;
-    }
-
-    public function get_age()
-    {
-        return $this->age;
-    }
-
-    public function increase_age($increment)
-    {
-        $this->age += $increment;
-    }
-}
-
-// This global function returns a view of a person object
-function person_view($person)
-{
-    return "<p>{$person->get_name()}: {$person->get_age()} years old</p>";
-}
+include "person.php";
 
 // Creating and accessing objects
 $p1 = new Person("Sam");
@@ -63,8 +28,8 @@ $p1->increase_age(11);
 
 <body>
     <h1>Objects</h1>
-    <?= person_view($p1) ?>
-    <?= person_view($p2) ?>
+    <?= $p1->view() ?>
+    <?= $p2->view() ?>
 
     <h1>var_dumps</h1>
     <!-- the <pre> element is useful here because it preserves the spacing -->

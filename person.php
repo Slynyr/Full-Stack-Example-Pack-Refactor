@@ -16,31 +16,26 @@
 class Person
 {
     // instance variables
-    private $name;
-    private $age;
+    public $name = "";
+    public $age = -1;
 
     // constructor function must be named __construct
     // not the use of default values
-    public function __construct($name, $age = -1)
+    function __construct($name, $age = -1)
     {
         $this->name = $name;
         $this->age = $age;
     }
 
-    // Accessor and mutator functions
-    public function get_name()
-    {
-        return $this->name;
-    }
-
-    public function get_age()
-    {
-        return $this->age;
-    }
-
-    public function increase_age($increment)
+    function increase_age($increment)
     {
         $this->age += $increment;
+    }
+
+    // This global function returns a view of a person object
+    function view()
+    {
+        return "<p>$this->name: $this->age years old</p>";
     }
 }
 
