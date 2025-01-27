@@ -52,8 +52,8 @@ Sam Scott, McMaster, 2024
             
             let timerId;            // holds the id of the timer
 
-            const c = document.getElementById("animationCanvas");
-            const ctx = c.getContext("2d");
+            let c = document.getElementById("animationCanvas");
+            let ctx = c.getContext("2d");
 
             // starts the animation
             function startAnimation() {
