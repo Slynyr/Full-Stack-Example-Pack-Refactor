@@ -20,12 +20,12 @@ Sam Scott, McMaster, 2024
                 red: 255, green: 0, blue: 0,
                 radius: 5,
 
-                moveOneStep: function () {
+                moveOneStep() {
                     this.x += this.xSpeed;
                     this.y += this.ySpeed;
                 },
 
-                draw: function (ctx) {
+                draw(ctx) {
                     ctx.fillStyle = "rgb(" + this.red + "," + this.green + "," + this.blue + ")";
                     ctx.beginPath();
                     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
