@@ -21,8 +21,8 @@ if (
     $paramsok = true;
     $command = "INSERT into grades (firstname, lastname, start) VALUES (?, ?, ?)";
     $stmt = $dbh->prepare($command);
-    $params = [$firstname, $lastname, $start];
-    $success = $stmt->execute($params);
+    $args = [$firstname, $lastname, $start];
+    $success = $stmt->execute($args);
 }
 
 ?>

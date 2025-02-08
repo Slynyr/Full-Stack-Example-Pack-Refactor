@@ -11,8 +11,8 @@ include "connect.php";
 
 $command = "INSERT into grades (firstname, lastname, start) VALUES (?, ?, ?)";
 $stmt = $dbh->prepare($command);
-$params = ["Drizzt", "Do'Urden", "2025-01-01"];
-$success = $stmt->execute($params);
+$args = ["Drizzt", "Do'Urden", "2025-01-01"];
+$success = $stmt->execute($args);
 ?>
 <html>
 

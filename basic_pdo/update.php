@@ -20,8 +20,8 @@ if (
     $paramsok = true;
     $command = "UPDATE grades SET final_exam=? WHERE firstname=?";
     $stmt = $dbh->prepare($command);
-    $params = [$exam, $firstname];
-    $success = $stmt->execute($params);
+    $args = [$exam, $firstname];
+    $success = $stmt->execute($args);
 }
 
 ?>
