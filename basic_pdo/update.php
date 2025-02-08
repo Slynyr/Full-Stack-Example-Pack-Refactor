@@ -28,7 +28,7 @@ if (
 <html>
 
 <head>
-    <title>Insert Script</title>
+    <title>Update Script</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/basic_examples.css">
@@ -39,8 +39,7 @@ if (
     if ($paramsok) {
         if ($success) {
             echo "<p>Win!</p>";
-            echo "<p>{$stmt->rowCount()} rows were affected by your 
-query.</p>";
+            echo "<p>{$stmt->rowCount()} rows were affected by your query.</p>";
         } else {
             echo "<p>Fail…</p>";
         }
