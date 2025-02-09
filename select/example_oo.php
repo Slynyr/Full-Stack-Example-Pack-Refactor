@@ -35,7 +35,8 @@ while ($row = $stmt->fetch()) {
     <?php
     if ($success) {
         echo "<p>Win!</p>";
-        echo "<p>{$stmt->rowCount()} rows were retrieved by your query.</p>";
+        $n = count($userlist);
+        echo "<p>$n rows were retrieved by your query.</p>";
         echo "<ul>";
 
         // Display each user object using its display method

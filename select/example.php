@@ -27,14 +27,18 @@ $success = $stmt->execute($params);
 <body>
     <?php
     if ($success) {
+        $num_students = 0;
         echo "<p>Win!</p>";
-        echo "<p>{$stmt->rowCount()} rows were retrieved by your query.</p>";
         echo "<p><strong>Students with final exam grades of $limit or more:</strong></p>";
         echo "<ul>";
         while ($row = $stmt->fetch()) {
             echo "<li>$row[firstname] $row[lastname]</li>";
+            $num_students += 1;
         }
         echo "</ul>";
+        if ($num_students === 0) {
+            echo "<p>Sorry, no students did that well.</p>";
+        }
     } else {
         echo "<p>Fail…</p>";
     }
