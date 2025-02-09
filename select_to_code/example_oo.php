@@ -5,7 +5,7 @@
  * Use the grades table (grades.sql) from eLearn, and make sure you 
  * change connect.php to use your correct login information.
  * 
- * Sam Scott, Mohawk College, 2019
+ * Sam Scott, McMaster, 2025
  */
 include "connect.php";
 include "user.php";     // import User class definition
@@ -38,9 +38,9 @@ while ($row = $stmt->fetch()) {
 
         // Display each user object using its display method
         foreach ($userlist as $user) {
-            echo "<a href='showsingleuser.php?id={$user->getId()}'>";
-            echo $user->toListItem(); 
-            echo "</a>";
+            echo "<li>";
+            echo $user->toLink("showsingleuser.php"); 
+            echo "</li>";
         }
         
         echo "</ul>";

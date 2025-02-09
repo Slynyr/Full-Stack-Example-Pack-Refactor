@@ -25,15 +25,16 @@ $success = $stmt->execute();
 </head>
 
 <body>
+    <h1>Click a Name Below</h1>
     <?php
     // output
     if ($success) {
         echo "<ul>";
 
         while ($row = $stmt->fetch()) {
-            echo "<a href='showsingleuser.php?id=$row[student_id]'>";
-            echo "<li>$row[firstname] $row[lastname]</li>"; 
-            echo "</a>";
+            echo "<li><a href='showsingleuser.php?id=$row[student_id]'>";
+            echo "$row[firstname] $row[lastname]"; 
+            echo "</a></li>";
         }
         
         echo "</ul>";
