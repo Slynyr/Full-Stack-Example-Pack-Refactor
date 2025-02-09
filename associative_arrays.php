@@ -28,34 +28,24 @@
     // is an expression, as shown below
     $a = "student";
     $b = "id";
-    echo "<p>Your Userid: {$user[$a . $b]}</p>";
+    echo "<p>Your Userid: {$user[$a .$b]}</p>";
 
-    if ($user["access"]) {
-        echo "<h2>You have access!</h2>";
-    } else {
-        echo "<h2>You do not have access.</h2>";
-    }
-
-    // var_dump and print_r are both good ways of outputting an array
-    // for debugging
+    // var_dump is a good way of outputting an array for debugging
     echo "<h3>var_dump</h3><pre>";
     var_dump($user);
     echo "</pre>";
 
     // another way to create an array
-    $user = ["studentid" => "6534654754", "age" => 18, "access" => false];
+    $user = ["studentid" => "6534654754", "age" => 18, "access" => true];
     ?>
-    <table>
-        <tr>
-            <th>Key</th>
-            <th>Value</th>
-        </tr>
+    <h3>Iterating over keys and values</h3>
+    <ul>
         <?php
         foreach ($user as $key => $value) {
-            echo "<tr><td>$key</td><td>$value</td></tr>";
+            echo "<li>$key: $value</li>";
         }
         ?>
-    </table>
+    </ul>
 </body>
 
 </html>
