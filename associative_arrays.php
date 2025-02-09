@@ -20,12 +20,14 @@
     $user["age"] = 22;
     $user["access"] = true;
 
-    // printing array elements - 2 ways
-    echo "<p>Your Userid: {$user["studentid"]}</p>";
+    // printing array element with a key (note you don't need the quotes)
     echo "<p>Your Userid: $user[studentid]</p>";
 
-    // you also need the braces if the array subscript
-    // is an expression, as shown below
+    // printing array element with variable key
+    $key = "studentid";
+    echo "<p>Your Userid: $user[$key]</p>";
+
+    // braces to print a more complicated expression
     $a = "student";
     $b = "id";
     echo "<p>Your Userid: {$user[$a .$b]}</p>";
