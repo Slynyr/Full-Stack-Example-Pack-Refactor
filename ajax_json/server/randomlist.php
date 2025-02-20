@@ -4,6 +4,7 @@
  * 
  * Sam Scott, McMaster University, 2025
  */
+header('Content-Type: application/json');
 
 // get the parameters
 $min = filter_input(INPUT_GET, "min", FILTER_VALIDATE_INT);
