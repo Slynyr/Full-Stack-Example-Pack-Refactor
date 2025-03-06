@@ -14,11 +14,14 @@ include "user.php";     // import User class definition
 $command = "SELECT firstname, lastname, student_id FROM grades ORDER BY lastname";
 $stmt = $dbh->prepare($command);
 $success = $stmt->execute();
+// The line below instructs PDO to fetch data into matching fields
+// in the User class. PDO will populate the fields, then call the
+// constructor, assuming no arguments are required.
+$stmt->setFetchMode(PDO::FETCH_CLASS, 'User'); 
 
 // Fill an array with User objects based on the results.
 $userlist = [];
-while ($row = $stmt->fetch()) {
-    $user = new User($row["firstname"], $row["lastname"], $row["student_id"]);
+while ($user = $stmt->fetch()) {
     array_push($userlist, $user);
 }
 ?>
