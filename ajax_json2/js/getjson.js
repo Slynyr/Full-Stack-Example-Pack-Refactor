@@ -51,9 +51,7 @@ window.addEventListener("load", function () {
         console.log(url); // debug
 
         // do the fetch
-        fetch(url, {
-                credentials: 'include'
-            })
+        fetch(url)
             .then(response => response.json())
             .then(success)
     });

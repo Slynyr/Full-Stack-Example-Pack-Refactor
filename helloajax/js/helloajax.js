@@ -19,7 +19,7 @@ window.addEventListener("load", function() {
     let button = document.getElementById("clickme");
     button.addEventListener("click", function() {
 
-        fetch("hello.txt", { credentials: 'include' })
+        fetch("hello.txt")
             .then(response => response.text()) // retrieves the response text
             .then(success); // calls the success function
     });
