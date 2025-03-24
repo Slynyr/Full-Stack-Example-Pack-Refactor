@@ -11,6 +11,7 @@
  * 
  * Sam Scott, McMaster University, 2025
  */
+header('Content-Type: application/json');
 
 include "connect.php";
 include "user.php";

@@ -11,9 +11,9 @@
  * 
  * Sam Scott, McMaster University, 2025
  */
+header('Content-Type: application/json');
 
 include "connect.php";
-include "user.php";
 
 // Prepare and execute the DB query
 $command = "SELECT firstname, lastname, final_exam FROM grades ORDER BY lastname";
