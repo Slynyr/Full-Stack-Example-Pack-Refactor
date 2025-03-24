@@ -14,7 +14,12 @@ $userpwd = filter_input(INPUT_POST, "password");
 
 // 3. compare
 if (password_verify($userpwd, $pwd)) {
-    echo "Access Granted.<br>'$userpwd' matches hash '$pwd'";
+    echo "Access Granted.<br>'$userpwd' matches";
 } else {
-    echo "Access Denied.<br>'$userpwd' does not match hash '$pwd'";
+    echo "Access Denied.<br>'$userpwd' does not match";
 }
+
+// 4. Here's a new hash for the password you entered
+$newpwd = password_hash($userpwd, PASSWORD_BCRYPT);
+
+echo "<br>new hash '$newpwd'";
