@@ -3,6 +3,7 @@
  * Advances the customer in line
  * Sam Scott, McMaster University, 2025
  */
+header('Content-Type: application/json');
 session_start();
 
 if (isset($_SESSION["number"])) {
