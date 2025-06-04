@@ -1,9 +1,9 @@
 # Full Stack Web Development Example Pack
-This repository contains examples and excercises covered throughout the Full Stack Web Development web textbook. Serving as an introductory resource to full stack web development, these resources serve as introductory material to --- 
+This repository contains examples and excercises covered throughout the [Full Stack Web Development for Beginners]("https://ecampusontario.pressbooks.pub/webdev/") digital textbook. Serving as an introductory resource to full stack web development, these resources are aimed at bringing novice programmers up to speed in the basics of **HTML**, **CSS**, **JavaScript**, **PHP**, and **SQL**!  
 
 ## Repository Structure
-- `#_chapter/` Each numbered directory is labeled with respect to the textbook
-- `data/` Contains SQL databases used throughout part 3 of the textbook
-- `images/` contains image assets used throughout examples and excercises
-- `templates/` contains boilerplate templates for each language covered throughout the textbook
-- `misc_examples/` contains additional example scripts that were not directly referenced in the textbook
+- `#_chapter/` Each numbered directory corresponds to the chapters in the textbook.
+- `data/` Contains SQL databases required for excercises and examples. 
+- `images/` Contains image assets required for excercises and examples. 
+- `templates/` Contains boilerplate templates for each programming language covered throughout the textbook.
+- `misc_examples/` Contains additional example scripts that were not directly referenced in the textbook.
