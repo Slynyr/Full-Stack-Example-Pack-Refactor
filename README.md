@@ -1,5 +1,5 @@
 # Full Stack Web Development Example Pack
-This repository contains examples and excercises covered throughout the [Full Stack Web Development for Beginners]("https://ecampusontario.pressbooks.pub/webdev/") digital textbook. Serving as an introductory resource to full stack web development, these resources are aimed at bringing novice programmers up to speed in the basics of **HTML**, **CSS**, **JavaScript**, **PHP**, and **SQL**!  
+This repository contains examples and excercises covered throughout the [Full Stack Web Development for Beginners](https://ecampusontario.pressbooks.pub/webdev/) digital textbook. Serving as an introductory resource to full stack web development, these resources are aimed at bringing novice programmers up to speed in the basics of **HTML**, **CSS**, **JavaScript**, **PHP**, and **SQL**!  
 
 ## Repository Structure
 - `#_chapter/` Each numbered directory corresponds to the chapters in the textbook.
