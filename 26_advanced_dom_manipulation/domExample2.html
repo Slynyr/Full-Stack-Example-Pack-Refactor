@@ -11,13 +11,13 @@ Sam Scott, McMaster University, 2024
             window.addEventListener("load", function () {
 
                 // the click handler to be added to every div
-                var clickFunction = function (event) {
+                const clickFunction = function (event) {
                     alert("clicked");
                 };
 
                 // adds the click event to every div
-                var divs = document.querySelectorAll("div");
-                for (var i = 0; i < divs.length; i++)
+                const divs = document.querySelectorAll("div");
+                for (let i = 0; i < divs.length; i++)
                     divs[i].onclick = clickFunction;
             });
         </script>

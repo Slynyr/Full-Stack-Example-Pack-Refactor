@@ -14,7 +14,7 @@ Sam Scott, McMaster, 2024
         window.addEventListener("load", function (event) {
             // global variables (global to this function, that is)
             // to control the animation
-            let ball = {
+            const ball = {
                 x: 350, y: 200,
                 xSpeed: -1, ySpeed: -0.5,
                 red: 255, green: 0, blue: 0,
@@ -35,8 +35,8 @@ Sam Scott, McMaster, 2024
             };
             let timerId;            // holds the id of the timer
 
-            let c = document.getElementById("animationCanvas");
-            let ctx = c.getContext("2d");
+            const c = document.getElementById("animationCanvas");
+            const ctx = c.getContext("2d");
 
             // starts the animation
             function startAnimation() {
