@@ -11,22 +11,22 @@ window.addEventListener("load", function () {
      * @param {String} text 
      */
     function success(text) {
-        let span = document.getElementById("target");
+        const span = document.getElementById("target");
         span.innerHTML = span.innerHTML + text + " ";
         console.log(text); //debug
     }
 
-    let button = document.getElementById("clickme");
+    const button = document.getElementById("clickme");
     button.addEventListener("click", function () {
 
         // get the name
-        let min = document.getElementById("min").value;
-        let max = document.getElementById("max").value;
+        const min = document.getElementById("min").value;
+        const max = document.getElementById("max").value;
 
         // construct the parameter string
         // we're using the same style as GET params
-        let params = "min=" + min + "&max=" + max;
-        let config = {
+        const params = "min=" + min + "&max=" + max;
+        const config = {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" }, // parameter format
             body: params // POST params are sent in the body

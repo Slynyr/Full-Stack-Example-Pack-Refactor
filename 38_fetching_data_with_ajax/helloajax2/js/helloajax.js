@@ -11,19 +11,19 @@ window.addEventListener("load", function() {
      * @param {String} text 
      */
     function success(text) {
-        let span = document.getElementById("target");
+        const span = document.getElementById("target");
         span.innerHTML = text;
         console.log(text); // debug
     }
 
-    let button = document.getElementById("clickme");
+    const button = document.getElementById("clickme");
     button.addEventListener("click", function() {
 
         // get the name
-        let name = document.getElementById("name").value;
+        const name = document.getElementById("name").value;
 
         // construct the URL with parameters
-        let url = "hello.php?nameparam=" + name;
+        const url = "hello.php?nameparam=" + name;
         console.log(url); // debug
 
         // do the fetch
