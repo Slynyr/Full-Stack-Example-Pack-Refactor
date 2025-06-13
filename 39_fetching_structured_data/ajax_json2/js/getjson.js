@@ -29,7 +29,7 @@ window.addEventListener("load", function () {
             students += userToHtml(users[i]);
             sum += users[i].finalexam;
         }
-        const avg = sum / users.length;
+        let avg = sum / users.length;
 
         // output the summary
         const span = document.getElementById("target");
@@ -45,7 +45,7 @@ window.addEventListener("load", function () {
     button.addEventListener("click", function () {
 
         // construct the url (try both)
-        const url = "server/userlist.php";
+        let url = "server/userlist.php";
         //let url = "server/userlist2.php";
 
         console.log(url); // debug
