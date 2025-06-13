@@ -19,7 +19,7 @@ Sam Scott, 2024
             alert("No Tax on Purchases Over $10!!!");
             let total = prompt("Subtotal?");
             if (total > 10) {
-                const tax = total * 0.13;
+                let tax = total * 0.13;
                 total = total + tax;
             }
             alert("Total :"+total);
