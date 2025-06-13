@@ -17,7 +17,7 @@ window.addEventListener("load", function() {
         for (let i = 0; i < a.length; i++) {
             sum += a[i];
         }
-        const avg = sum / a.length;
+        let avg = sum / a.length;
         span.innerHTML = a.length + " ints recieved, average value: " + avg;
 
         console.log(a); // debug
@@ -26,13 +26,13 @@ window.addEventListener("load", function() {
     let button = document.getElementById("clickme");
     button.addEventListener("click", function() {
 
-        // get the name
-        const min = document.getElementById("min").value;
-        const max = document.getElementById("max").value;
-        const num = document.getElementById("num").value;
+        // get the values
+        let min = document.getElementById("min").value;
+        let max = document.getElementById("max").value;
+        let num = document.getElementById("num").value;
 
         // construct the url with parameters
-        const url = "server/randomlist.php?min=" + min + "&max=" + max + "&num=" + num;
+        let url = "server/randomlist.php?min=" + min + "&max=" + max + "&num=" + num;
         console.log(url); // debug
 
         // do the fetch
