@@ -20,10 +20,10 @@ window.addEventListener("load", function() {
     button.addEventListener("click", function() {
 
         // get the name
-        const name = document.getElementById("name").value;
+        let name = document.getElementById("name").value;
 
         // construct the URL with parameters
-        const url = "hello.php?nameparam=" + name;
+        let url = "hello.php?nameparam=" + name;
         console.log(url); // debug
 
         // do the fetch
