@@ -25,10 +25,10 @@
     <script>
         window.addEventListener("load", function () {
             function whereClicked(event) {
-                var x = event.pageX - this.offsetLeft;
-                var y = event.pageY - this.offsetTop;
+                let x = event.pageX - this.offsetLeft;
+                let y = event.pageY - this.offsetTop;
 
-                var ctx = this.getContext("2d");
+                const ctx = this.getContext("2d");
                 ctx.fillStyle = "rgb(53, 66, 29)";
                 ctx.fillText("(" + x + "," + y + ")", x, y);
 

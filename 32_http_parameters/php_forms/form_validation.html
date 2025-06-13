@@ -18,9 +18,9 @@
     </style>
     <script>
         window.addEventListener("load", function (event) {
-            let pwform = document.getElementById("pwform");
-            let pwinput = document.getElementById("newpw");
-            let feedback = document.getElementById("feedback");
+            const pwform = document.getElementById("pwform");
+            const pwinput = document.getElementById("newpw");
+            const feedback = document.getElementById("feedback");
             pwform.addEventListener("submit", function (event) {
                 let pw = pwinput.value;
                 if (pw.length < 8) {

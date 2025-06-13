@@ -11,12 +11,12 @@ window.addEventListener("load", function() {
      * @param {String} text 
      */
     function success(text) {
-        let span = document.getElementById("target");
+        const span = document.getElementById("target");
         span.innerHTML = text;
         console.log(text); // debug
     }
 
-    let button = document.getElementById("clickme");
+    const button = document.getElementById("clickme");
     button.addEventListener("click", function() {
 
         fetch("hello.txt")

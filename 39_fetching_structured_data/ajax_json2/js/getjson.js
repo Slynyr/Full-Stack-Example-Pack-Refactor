@@ -29,10 +29,10 @@ window.addEventListener("load", function () {
             students += userToHtml(users[i]);
             sum += users[i].finalexam;
         }
-        let avg = sum / users.length;
+        const avg = sum / users.length;
 
         // output the summary
-        let span = document.getElementById("target");
+        const span = document.getElementById("target");
         span.innerHTML = users.length + " users. Average Grade: " + avg + ".";
 
         // output the students
@@ -41,11 +41,11 @@ window.addEventListener("load", function () {
         console.log(users); // debug
     }
 
-    let button = document.getElementById("clickme");
+    const button = document.getElementById("clickme");
     button.addEventListener("click", function () {
 
         // construct the url (try both)
-        let url = "server/userlist.php";
+        const url = "server/userlist.php";
         //let url = "server/userlist2.php";
 
         console.log(url); // debug

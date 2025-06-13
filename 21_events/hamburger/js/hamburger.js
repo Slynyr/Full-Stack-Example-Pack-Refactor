@@ -8,8 +8,8 @@ window.addEventListener("load", function(event) {
   let open = false;
 
   // DOM Element Retrieval
-  let menu = document.getElementById("hamburgercontent");
-  let hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("hamburgercontent");
+  const hamburger = document.getElementById("hamburger");
 
   /**
    * Check "open" variable, show/hide menu as appropriate

@@ -34,9 +34,9 @@ Sam Scott, McMaster, 2024
     <script type='text/javascript'>
         window.addEventListener("load", function (event) {
             // arrays to hold the egg locations
-            let eggs = [];
-            let c = document.getElementById("mycanvas");
-            let ctx = c.getContext("2d");
+            const eggs = [];
+            const c = document.getElementById("mycanvas");
+            const ctx = c.getContext("2d");
 
             // code to count the number of images and sounds loaded
             let loads = 0;
@@ -49,15 +49,15 @@ Sam Scott, McMaster, 2024
             }
 
             // create the sound and image objects
-            let birdImage = new Image();
+            const birdImage = new Image();
             birdImage.src = "images/bird.png";
             birdImage.addEventListener("load", countLoads);
 
-            let eggImage = new Image();
+            const eggImage = new Image();
             eggImage.src = "images/egg.png";
             eggImage.addEventListener("load", countLoads);
 
-            let birdSound = new Audio("sounds/squeeze-toy-5.mp3");
+            const birdSound = new Audio("sounds/squeeze-toy-5.mp3");
             birdSound.addEventListener("canplaythrough", soundLoaded);
 
             // draws everything
@@ -75,8 +75,8 @@ Sam Scott, McMaster, 2024
                 for (egg of eggs)
                     ctx.drawImage(eggImage, egg.x, egg.y);
 
-                let x = event.pageX - c.offsetLeft - 2;
-                let y = event.pageY - c.offsetTop - 2;
+                const x = event.pageX - c.offsetLeft - 2;
+                const y = event.pageY - c.offsetTop - 2;
                 ctx.drawImage(birdImage, x - birdImage.width / 2, y - birdImage.height / 2);
             }
 
