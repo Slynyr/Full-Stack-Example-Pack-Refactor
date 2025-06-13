@@ -20,12 +20,12 @@ window.addEventListener("load", function () {
     button.addEventListener("click", function () {
 
         // get the name
-        const min = document.getElementById("min").value;
-        const max = document.getElementById("max").value;
+        let min = document.getElementById("min").value;
+        let max = document.getElementById("max").value;
 
         // construct the parameter string
         // we're using the same style as GET params
-        const params = "min=" + min + "&max=" + max;
+        let params = "min=" + min + "&max=" + max;
         const config = {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" }, // parameter format
